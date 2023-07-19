@@ -3,3 +3,5 @@ matplotlib==3.7.1
 geopandas==0.13.2
 ipykernel==6.23.1
 openpyxl
+seaborn
+requests
