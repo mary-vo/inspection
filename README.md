@@ -1,5 +1,4 @@
-# Background on Project
-
+# Background
 The goal is to get Louisville restaurant data and louisville inspection data from Open Portal to discover if there's any correlation or relationship.
 
 Sources:
