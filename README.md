@@ -1,8 +1,8 @@
 # Background
-The goal is to get Louisville restaurant data and louisville inspection data from Open Portal to discover if there's any correlation or relationship.
+The goal is to get Louisville restaurant data and louisville inspection data from Open Portal and discover if there's any correlation or relationship based on the available categories.
 
 Sources:
- - Yelp API (returns 1000 businesses)
+ - Yelp API 
     - Yelp's API will only allow to return 1000 businesses
  - Louisville Restaurant Inspection Scores: https://data.louisvilleky.gov/datasets/LOJIC::louisville-metro-ky-restaurant-inspection-scores/about
     - Data is only for the last year
@@ -20,7 +20,10 @@ Sources:
    * Created a choropleth map
    * Created a pairplot
    * Created a scatterplot
-4. Interpret your data
+4. Best practices
+   * Used virtual environment, see below for instructions on how to set one up
+   * Included requirements.txt
+5. Interpret your data
    * Please view interpretation of data at the very bottom of [analysis.ipynb](analysis.ipynb) 
 
 # Usage
