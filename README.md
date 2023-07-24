@@ -40,5 +40,7 @@ Follow these steps to run the program on your local machine:
      * powershell: `.\venv\Scripts\activate`
      * command prompt: `venv\Scripts\activate`
 * While in the root directory, run `pip install -r requirements.txt`
-* Add API Key in [analysis.ipynb](analysis.ipynb) (see text file provided via Slack). Note: search for *"Authorization": "Bearer "*; insert key after 'Bearer'
+* Open [analysis.ipynb](analysis.ipynb) by selecting it in the Explorer pane of VSCode
+* Select Kernel (top right of notebook) > Python Environments... > venv
+* Add API Key in [analysis.ipynb](analysis.ipynb) (see text file provided via Slack). Note: search for *"Authorization": "Bearer "*; insert key after 'Bearer '
 * Click on the first cell > select "Run All" button
