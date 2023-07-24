@@ -40,9 +40,5 @@ Follow these steps to run the program on your local machine:
      * powershell: `.\venv\Scripts\activate`
      * command prompt: `venv\Scripts\activate`
 * While in the root directory, run `pip install -r requirements.txt`
-* Add API Key in [Fetch restaurants from Yelp API](#section-title) (see text file provided via Slack)
-* In the terminal, cd to `src` > run `python main.py`. Note: Project can take ~18 minutes to run. If you want to reduce run time, limit data by making the following modifications in [source_dataframe.py](src/source_dataframe.py):
-  * Line 19, 31, and 43: df = pd.concat(df_list,ignore_index=True)**.head(200)**
-* Upon completion a file called "curated_data.xlsx" will be created under data-analysis folder
-* Run [analysis.ipynb](src/analysis.ipynb)
-  * You may need to choose your environment. Run All > Python Environments > choose Python environment (or venv)
+* Add API Key in [analysis.ipynb](analysis.ipynb) (see text file provided via Slack). Note: search for *"Authorization": "Bearer "*; insert key after 'Bearer'
+* Click on the first cell > select "Run All" button
