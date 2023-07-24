@@ -1,7 +1,48 @@
-sources:
- - Yelp api (returns 1000 businesses)
+# Background on Project
+
+The goal is to get Louisville restaurant data and louisville inspection data from Open Portal to discover if there's any correlation or relationship.
+
+Sources:
+ - Yelp API (returns 1000 businesses)
+    - Yelp's API will only allow to return 1000 businesses
  - Louisville Restaurant Inspection Scores: https://data.louisvilleky.gov/datasets/LOJIC::louisville-metro-ky-restaurant-inspection-scores/about
+    - Data is only for the last year
 
 
-Fusion Authentication
-https://www.yelp.com/developers/v3/manage_app
+# Features Used
+
+1. Read data in
+   * Read in excel file
+   * Extract data from Yelp API
+2. Manipulate and clean data
+   * Used pandas to merge two datasets
+   * Drop columns, change strings to lowercase
+3. Visualize your data
+   * Created a choropleth map
+   * Created a pairplot
+   * Created a scatterplot
+4. Interpret your data
+   * Please view interpretation of data at the very bottom of [analysis.ipynb](analysis.ipynb) 
+
+# Usage
+
+Follow these steps to run the program on your local machine:
+* Clone project:
+  * Open desired terminal
+  * cd to desired location
+  * run `git clone git@github.com:mary-vo/inspection.git`
+* Open project in Visual Studio:
+  * Open Visual Studio > File > Open Folder... > Navigate to location where project was cloned > click "Select Folder"
+* Create and activate a virtual environment
+  1. In terminal, type: `python -m venv venv`
+  2. Activate the virtual environment, commands vary based on terminal:
+     * bash: `source venv/Scripts/activate`
+     * powershell: `.\venv\Scripts\activate`
+     * command prompt: `venv\Scripts\activate`
+* While in the root directory, run `pip install -r requirements.txt`
+* Add API Key in [Fetch restaurants from Yelp API](#section-title) (see text file provided via Slack)
+* In the terminal, cd to `src` > run `python main.py`. Note: Project can take ~18 minutes to run. If you want to reduce run time, limit data by making the following modifications in [source_dataframe.py](src/source_dataframe.py):
+  * Line 19, 31, and 43: df = pd.concat(df_list,ignore_index=True)**.head(200)**
+* Upon completion a file called "curated_data.xlsx" will be created under data-analysis folder
+* Run [analysis.ipynb](src/analysis.ipynb)
+  * You may need to choose your environment. Run All > Python Environments > choose Python environment (or venv)
