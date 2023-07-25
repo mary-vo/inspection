@@ -44,5 +44,14 @@ Follow these steps to run the program on your local machine:
 * While in the root directory, run `pip install -r requirements.txt`
 * Open [analysis.ipynb](analysis.ipynb) by selecting it in the Explorer pane of VSCode
 * Select Kernel (top right of notebook) > Python Environments... > venv
-* Add API Key in [analysis.ipynb](analysis.ipynb) (see text file provided via Slack). Note: search for *"Authorization": "Bearer "*; insert key after 'Bearer '
+* Create an app to get an API Key:
+   * Create an account here: https://www.yelp.com/login?return_url=/developers/v3/manage_app
+   * Log in
+   * Under the "General" > "Create App" > fill in the following information:
+      * App Name: Inspections
+      * Contact Email: your-emailaddress
+      * Description: Testing
+      * Verify you're human
+   * Copy the "API Key"
+* Add API Key in [analysis.ipynb](analysis.ipynb) Note: search for *"Authorization": "Bearer "*; insert key after 'Bearer '
 * Click on the first cell > select "Run All" button
