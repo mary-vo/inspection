@@ -53,5 +53,5 @@ Follow these steps to run the program on your local machine:
       * Description: Testing
       * Verify you're human
    * Copy the "API Key"
-* Add API Key in [analysis.ipynb](analysis.ipynb) Note: search for *"Authorization": "Bearer "*; insert key after 'Bearer '
+* Add API Key in [analysis.ipynb](analysis.ipynb). Note: search for *"Authorization": "Bearer "*; insert key after 'Bearer '
 * Click on the first cell > select "Run All" button
